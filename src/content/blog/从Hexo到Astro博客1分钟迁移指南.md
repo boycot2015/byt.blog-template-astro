@@ -30,7 +30,7 @@ cover: "https://i0.wp.com/uxiaohan.github.io/v2/2025/04/1744018738123.webp"
 
 ```bash
 # 创建美妙的 Astro 项目
-npm create astro@latest --template uxiaohan/vhAstro-Theme astro-blog
+npm create astro@latest --template uxiaohan/bytAstro-Theme astro-blog
 # 进入项目目录
 cd astro-blog
 # 安装依赖
@@ -51,11 +51,11 @@ npm run dev
 
 ### Vercel 自动部署
 
-::btn[Vercel 一键部署]{link="https://vercel.com/new/clone?repository-url=https://github.com/uxiaohan/vhAstro-Theme"}
+::btn[Vercel 一键部署]{link="https://vercel.com/new/clone?repository-url=https://github.com/uxiaohan/bytAstro-Theme"}
 
 ### Cloudflare Pages 自动部署
 
-::btn[Cloudflare Pages 一键部署]{link="https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/uxiaohan/vhAstro-Theme" type="warning"}
+::btn[Cloudflare Pages 一键部署]{link="https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/uxiaohan/bytAstro-Theme" type="warning"}
 
 其他更多部署方式（简简单单闭眼部署），请参考 [Astro 官方文档](https://docs.astro.build/en/guides/integrations-guide/cloudflare/)。
 

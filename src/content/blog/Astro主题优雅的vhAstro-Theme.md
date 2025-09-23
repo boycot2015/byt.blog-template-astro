@@ -1,8 +1,8 @@
 ---
-title: "Astro主题-优雅的vhAstro-Theme【使用文档】"
+title: "Astro主题-优雅的bytAstro-Theme【使用文档】"
 categories: Code
-tags: ["Astro", "主题", "博客", "vhAstro", "vhAstro-Theme"]
-id: "astro-theme-vhastro-theme"
+tags: ["Astro", "主题", "博客", "bytAstro", "bytAstro-Theme"]
+id: "astro-theme-bytAstro-theme"
 date: 2025-03-02 18:18:18
 cover: "https://i0.wp.com/uxiaohan.github.io/v2/2025/04/1743737394560.webp"
 recommend: true
@@ -14,18 +14,18 @@ top: true
 
 🍇 Astro 活跃的社区支持、广泛的现代框架兼容性、高效的性能优化、优秀的开发体验以及原生 SEO 优化，支持 Markdown/MDX 编写内容，且允许开发者混合使用 React、Vue、Svelte 等主流框架的组件，是我心目中最适合构建博客这样的以内容驱动的网站的 Web 框架。
 
-🍊 我以 Astro 为基础开发的 vhAstro-Theme 主题模版，是一款优雅的响应式博客主题，它具有简洁的设计、流畅的动画和页面过渡。
+🍊 我以 Astro 为基础开发的 bytAstro-Theme 主题模版，是一款优雅的响应式博客主题，它具有简洁的设计、流畅的动画和页面过渡。
 :::
 
-## 🚀 vhAstro-Theme：一款基于 Astro 构建的优雅的响应式博客主题
+## 🚀 bytAstro-Theme：一款基于 Astro 构建的优雅的响应式博客主题
 
 **「当极简主义遇上工程之美」**
 
-![Astro主题 vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2025/04/1743737394560.webp)
+![Astro主题 bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2025/04/1743737394560.webp)
 
 ## 项目地址
 
-> 1、QQ 群下载：113445803 <br>2、GitHub 下载（推荐）：https://github.com/uxiaohan/vhAstro-Theme （谢谢你的star）
+> 1、QQ 群下载：113445803 <br>2、GitHub 下载（推荐）：https://github.com/uxiaohan/bytAstro-Theme （谢谢你的star）
 
 ## ✨ 功能特性
 
@@ -70,7 +70,7 @@ top: true
 
 ### 使用 Github 模板
 
-- 使用此模板 [生成新仓库或 Fork 此仓库](https://github.com/new?template_name=vhAstro-Theme&template_owner=uxiaohan)
+- 使用此模板 [生成新仓库或 Fork 此仓库](https://github.com/new?template_name=bytAstro-Theme&template_owner=uxiaohan)
 - 进行本地开发，Clone 新的仓库，执行 `pnpm install` 以安装依赖
 - 若未安装 [pnpm](https://pnpm.io)，执行 `npm install -g pnpm`
 - 通过配置文件 `src/config.ts` 自定义博客
@@ -79,11 +79,11 @@ top: true
 
 ### Vercel 自动部署
 
-::btn[Vercel 一键部署]{link="https://vercel.com/new/clone?repository-url=https://github.com/uxiaohan/vhAstro-Theme"}
+::btn[Vercel 一键部署]{link="https://vercel.com/new/clone?repository-url=https://github.com/uxiaohan/bytAstro-Theme"}
 
 ### Cloudflare Pages 自动部署
 
-::btn[Cloudflare Pages 一键部署]{link="https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/uxiaohan/vhAstro-Theme" type="warning"}
+::btn[Cloudflare Pages 一键部署]{link="https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/uxiaohan/bytAstro-Theme" type="warning"}
 
 其他更多部署方式（简简单单闭眼部署），请参考 [Astro 官方文档](https://docs.astro.build/en/guides/integrations-guide/cloudflare/)。
 
@@ -91,11 +91,11 @@ top: true
 
 ```bash
 # 使用 pnpm
-pnpm create astro@latest --template uxiaohan/vhAstro-Theme astro-blog
+pnpm create astro@latest --template uxiaohan/bytAstro-Theme astro-blog
 # 或者 yarn
-yarn create astro --template uxiaohan/vhAstro-Theme astro-blog
+yarn create astro --template uxiaohan/bytAstro-Theme astro-blog
 # 或者 npm
-npm create astro@latest -- --template uxiaohan/vhAstro-Theme astro-blog
+npm create astro@latest -- --template uxiaohan/bytAstro-Theme astro-blog
 # 进入项目目录
 cd astro-blog
 ```
@@ -135,15 +135,15 @@ export default {
 	// api 为空则使用 data 静态数据
 	data: [
 		{
-			name: "韩小韩博客",
-			link: "https://www.vvhan.com",
+			name: "boycot博客",
+			link: "https://www.boycot.top",
 			avatar: "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640",
 			descr: "运气是计划之外的东西."
 		},
 		{
-			name: "韩小韩API",
-			link: "https://api.vvhan.com",
-			avatar: "https://api.vvhan.com/static/images/logo.webp",
+			name: "boycotAPI",
+			link: "https://api.boycot.top",
+			avatar: "https://api.boycot.top/static/images/logo.webp",
 			descr: "免费Web API数据接口调用服务平台."
 		}
 	]
@@ -185,23 +185,23 @@ export default {
   data: [
     {
       "title": "Astro 中使用 Lenis 增加鼠标滚动阻尼感",
-      "auther": "韩小韩博客",
+      "auther": "boycot博客",
       "date": "2025-03-06",
-      "link": "https://www.vvhan.com/article/Lenis-in-Astro",
+      "link": "https://www.boycot.top/article/Lenis-in-Astro",
       "content": "在移动端触控交互中，惯性滚动带来的丝滑体验已成为标配，但鼠标滚轮受限于机械结构，滚动时难免产生生硬的段落感。如何让传统滚轮操作也能获得如触控板般的阻尼反馈？Lenis库通过JavaScript模拟惯性算法，成功将”物理惯性”引入网页滚动，本文将解析其实现原理与实战应用。"
     },
     {
       "title": "Astro 添加 Twikoo 评论组件",
-      "auther": "韩小韩博客",
+      "auther": "boycot博客",
       "date": "2025-03-03",
-      "link": "https://www.vvhan.com/article/astro-twikoo",
+      "link": "https://www.boycot.top/article/astro-twikoo",
       "content": "Astro在使用视图过渡路由时，在跳转路由时，会导致JS文件只有在第一次进入页面时生效，所以Astro在使用视图过渡路由下Twikoo时无法正常使用的，我是单独写了一个评论组件，对Twikoo进行动态加载，然后在需要评论的页面引入的。"
     },
     {
-      "title": "Astro主题-优雅的vhAstro-Theme【使用文档】",
-      "auther": "韩小韩博客",
+      "title": "Astro主题-优雅的bytAstro-Theme【使用文档】",
+      "auther": "boycot博客",
       "date": "2025-03-02",
-      "link": "https://www.vvhan.com/article/astro-theme-vhastro-theme",
+      "link": "https://www.boycot.top/article/astro-theme-bytAstro-theme",
       "content": "🥝从Z-Blog到Emlog，从Typecho到Hexo，从动态博客到静态博客，作为一个前端，我深入了解了多种SSG工具，如Hexo、Vitepress、Hugo等，并最终锁定了Astro作为重构博客的选择。🍇Astro活跃的社区支持、广泛的现代框架兼容性、高效的性能优化、优秀的开发体验。"
     }
   ]
@@ -233,7 +233,7 @@ comment: false # 关闭页面评论（默认开启）
 
 ## ✅ Lighthouse
 
-![vhAstro-Theme-Lighthouse](https://uxiaohan.github.io/v2/2025/03/1742543844078.svg)
+![bytAstro-Theme-Lighthouse](https://uxiaohan.github.io/v2/2025/03/1742543844078.svg)
 
 ## 🌈 项目结构
 
@@ -278,13 +278,13 @@ comment: false # 关闭页面评论（默认开启）
 ```js
 export default {
   // 网站标题
-  Title: '韩小韩博客',
+  Title: 'boycot博客',
   // 网站地址
-  Site: 'https://www.vvhan.com',
+  Site: 'https://www.boycot.top',
   // 网站副标题
   Subtitle: '不曾与你分享的时间,我在进步.',
   // 网站描述
-  Description: '韩小韩博客 专注于前开发与相关技术的实战分享，涵盖Vue框架、Node.js、Serverless等，并涉及Node、Python、Linux、Docker等领域。同时，博客也分享作者的生活、音乐和旅行的热爱。',
+  Description: 'boycot博客 专注于前开发与相关技术的实战分享，涵盖Vue框架、Node.js、Serverless等，并涉及Node、Python、Linux、Docker等领域。同时，博客也分享作者的生活、音乐和旅行的热爱。',
   // 网站作者
   Author: '.𝙃𝙖𝙣',
   // 作者头像
@@ -316,15 +316,15 @@ export default {
   Theme: {
     // 颜色请用 16 进制颜色码
     // 主题颜色
-    "--vh-main-color": "#01C4B6",
+    "--byt-main-color": "#01C4B6",
     // 字体颜色
-    "--vh-font-color": "#34495e",
+    "--byt-font-color": "#34495e",
     // 侧边栏宽度
-    "--vh-aside-width": "318px",
+    "--byt-aside-width": "318px",
     // 全局圆角
-    "--vh-main-radius": "0.88rem",
+    "--byt-main-radius": "0.88rem",
     // 主体内容宽度
-    "--vh-main-max-width": "1458px",
+    "--byt-main-max-width": "1458px",
   },
   // 导航栏 (新窗口打开 newWindow: true)
   Navs: [
@@ -336,17 +336,17 @@ export default {
     { text: '昔日', link: '/archives', icon: 'Nav_archives' },
     { text: '留言', link: '/message', icon: 'Nav_message' },
     { text: '关于', link: '/about', icon: 'Nav_about' },
-    { text: 'API', link: 'https://api.vvhan.com/', target: true, icon: 'Nav_link' },
+    { text: 'API', link: 'https://api.boycot.top/', target: true, icon: 'Nav_link' },
   ],
   // 侧边栏个人网站
   WebSites: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
     { text: 'Github', link: 'https://github.com/uxiaohan', icon: 'WebSite_github' },
-    { text: '韩小韩API', link: 'https://api.vvhan.com', icon: 'WebSite_api' },
-    { text: '每日热榜', link: 'https://hot.vvhan.com', icon: 'WebSite_hot' },
+    { text: 'boycotAPI', link: 'https://api.boycot.top', icon: 'WebSite_api' },
+    { text: '每日热榜', link: 'https://hot.boycot.top', icon: 'WebSite_hot' },
     { text: '骤雨重山图床', link: 'https://wp-cdn.4ce.cn', icon: 'WebSite_img' },
-    { text: 'HanAnalytics', link: 'https://analytics.vvhan.com', icon: 'WebSite_analytics' },
+    { text: 'HanAnalytics', link: 'https://analytics.boycot.top', icon: 'WebSite_analytics' },
   ],
   // 侧边栏展示
   AsideShow: {
@@ -363,7 +363,7 @@ export default {
   DNSOptimization: [
     'https://i0.wp.com',
     'https://cn.cravatar.com',
-    'https://analytics.vvhan.com',
+    'https://analytics.boycot.top',
     'https://vh-api.4ce.cn',
     'https://registry.npmmirror.com',
     'https://pagead2.googlesyndication.com'
@@ -384,7 +384,7 @@ export default {
     }
   },
   // Han Analytics 统计（https://github.com/uxiaohan/HanAnalytics）
-  HanAnalytics: { enable: true, server: 'https://analytics.vvhan.com', siteId: 'Hello-HanHexoBlog' },
+  HanAnalytics: { enable: true, server: 'https://analytics.boycot.top', siteId: 'Hello-HanHexoBlog' },
   // Google 广告
   GoogleAds: {
     ad_Client: '', //ca-pub-xxxxxx
@@ -637,25 +637,25 @@ $\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$
 
 ```md
 :::picture
-![Astro主题-vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
-![Astro主题-vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
-![Astro主题-vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
+![Astro主题-bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
+![Astro主题-bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
+![Astro主题-bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
 :::
 ```
 
 :::picture
-![Astro主题-vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
-![Astro主题-vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
-![Astro主题-vhAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
+![Astro主题-bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
+![Astro主题-bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
+![Astro主题-bytAstro-Theme](https://i0.wp.com/uxiaohan.github.io/v2/2023/03/42944511.png)
 :::
 
 ### LivePhoto 组件
 
 ```md
 <!-- 纵向图片 -->
-::vhLivePhoto{photo="https://static.vvhan.com/img/1.webp" video="https://static.vvhan.com/img/1.mp4" type="y"}
+::vhLivePhoto{photo="https://static.boycot.top/img/1.webp" video="https://static.boycot.top/img/1.mp4" type="y"}
 <!-- 横向图片 -->
-::vhLivePhoto{photo="https://static.vvhan.com/img/2.webp" video="https://static.vvhan.com/img/2.mp4"}
+::vhLivePhoto{photo="https://static.boycot.top/img/2.webp" video="https://static.boycot.top/img/2.mp4"}
 ```
 
 ::vhLivePhoto{photo="/assets/livephoto/1.webp" video="/assets/livephoto/1.mp4" type="y"}
