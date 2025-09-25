@@ -12,27 +12,27 @@ const remarkNote = () => {
       if (type == 'textDirective' || type == 'leafDirective' || type == 'containerDirective') {
         // 设置 HTML 标签和 class
         const data = node.data || (node.data = {});
-        const hProperties = data.hProperties || (data.hProperties = {});
+        const Properties = data.Properties || (data.Properties = {});
         // 根据指令类型设置标签
         data.hName = name == 'btn' ? 'a' : 'section';
         // 这是 a 标签
-        attributes.link && (hProperties.href = attributes.link);
+        attributes.link && (Properties.href = attributes.link);
         // 校验相册元素
         if (name == 'picture') {
           node.children = node.children.flatMap((child: any) => (child.type === 'paragraph' ? child.children : child));
         }
         // 处理 video 组件
         if (name.startsWith('byt')) {
-          Object.keys(node.attributes).forEach((i: any) => (hProperties[`data-${i}`] = node.attributes[i]));
+          Object.keys(node.attributes).forEach((i: any) => (Properties[`data-${i}`] = node.attributes[i]));
         }
         // 设置 class
-        hProperties.class = `byt-node byt-${name}${attributes.type ? ` ${name}-${attributes.type}` : ''}`;
+        Properties.class = `byt-node byt-${name}${attributes.type ? ` ${name}-${attributes.type}` : ''}`;
         // 文章字数统计
-        const textOnPage = toString(tree);
-        const readingTime = getReadingTime(textOnPage);
-        astroData.astro.frontmatter.reading_time = readingTime.minutes
-        astroData.astro.frontmatter.article_word_count = readingTime.words
       }
+      const textOnPage = toString(tree);
+      const readingTime = getReadingTime(textOnPage);
+      astroData.astro.frontmatter.reading_time = readingTime.minutes
+      astroData.astro.frontmatter.article_word_count = readingTime.words
     });
   };
 }

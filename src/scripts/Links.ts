@@ -17,7 +17,7 @@ const LinksInit = async (data: any, render?: (data: any) => any, staticData?: an
         }
       }
     }
-    linksDOM.innerHTML = res.map((i: any) => `<a href="${i.link}" target="_blank"><img class="avatar" src="${i.avatar}" /><section class="link-info"><span>${i.name}</span><p class="byt-ellipsis line-2">${i.descr}</p></section></a>`).join('');
+    linksDOM.innerHTML = res?.sort(() => Math.random() - 0.5).map((i: any) => `<a href="${i.link}" target="_blank"><img class="avatar" src="${i.avatar}" /><section class="link-info"><span>${i.name}</span><p class="byt-ellipsis line-2">${i.descr}</p></section></a>`).join('');
     // 图片懒加载
     LzImgInit();
   } catch {

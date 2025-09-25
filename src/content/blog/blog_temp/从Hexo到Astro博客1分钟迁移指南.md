@@ -6,7 +6,7 @@ id: "hexo-to-astro-1-minute-migration-guide"
 date: 2025-04-07 17:20:46
 cover: "https://i0.wp.com/uxiaohan.github.io/v2/2025/04/1744018738123.webp"
 recommend: true
-top: true
+# top: true
 ---
 
 :::note{type="info"}
