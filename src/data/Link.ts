@@ -28,6 +28,12 @@ export default {
       "link": "https://api.boycot.top",
       "avatar": "https://api.boycot.top/favicon.png",
       "descr": "免费Web API数据接口调用服务平台."
+    },
+    {
+      "name": "bytMusic",
+      "link": "https://music.boycot.top",
+      "avatar": "https://music.boycot.top/favicon.svg",
+      "descr": "bytMusic平台."
     }
   ]
 }

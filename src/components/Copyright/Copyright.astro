@@ -1,6 +1,6 @@
 ---
 const { time, sitename, title, site, id, auther } = Astro.props;
-const articleURL = `${site}/article/${id}`;
+const articleURL = `${site}/article/${id||title}`;
 import "./Copyright.less";
 ---
 

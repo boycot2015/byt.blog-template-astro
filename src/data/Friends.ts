@@ -14,6 +14,13 @@ export default {
   // api 为空则使用 data 静态数据
   data: [
     {
+      "title": "Astro主题-优雅的vhAstro-Theme【使用文档】",
+      "auther": ".𝙃𝙖𝙣",
+      "date": "2025-03-02",
+      "link": "https://www.vvhan.com/article/astro-theme-vhastro-theme",
+      "content": "🍊 我以 Astro 为基础开发的 vhAstro-Theme 主题模版，是一款优雅的响应式博客主题，它具有简洁的设计、流畅的动画和页面过渡。🍇 Astro 活跃的社区支持、广泛的现代框架兼容性、高效的性能优化、优秀的开发体验以及原生 SEO 优化，支持 Markdown/MDX 编写内容，且允许开发者混合使用 React、Vue、Svelte 等主流框架的组件，是我心目中最适合构建博客这样的以内容驱动的网站的 Web 框架。🥝 从 Z-Blog 到 Emlog，从 Typecho 到 Hexo，从动态博客到静态博客，作为一个前端，我深入了解了多种 SSG 工具，如 Hexo、Vitepress、Hugo 等，并最终锁定了 Astro 作为重构博客的选择"
+    },
+    {
       "title": "astrojs使用epubjs解析epub文件",
       "auther": "boycot博客",
       "date": "2025-2-25",

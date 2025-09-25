@@ -7,12 +7,12 @@ export default {
   // 注意：图片请用 byt-img-flex 类包裹
   data: [
     {
-      "date": "2024-10-08 18:18:18",
+      "date": "2025-9-25 18:33:18",
       "tags": [
-        "日常",
-        "工作"
+        "项目移植",
+        "博客"
       ],
-      "content": "下班！"
+      "content": "项目移植完成，博客上线！<br/>1. 使用 Astro 框架构建，部署在 Vercel 平台。<br/>2. 使用 vhAstro-Theme UI，进行深度定制。"
     },
     {
       "date": "2024-10-05 16:16:06",

@@ -10,6 +10,7 @@ tags:
 id: "weibo-dynamic-emotion-analysis-open-source"
 cover: "https://i0.wp.com/uxiaohan.github.io/v2/2024/09/1725437035.webp"
 recommend: true
+hide: true
 ---
 
 :::note

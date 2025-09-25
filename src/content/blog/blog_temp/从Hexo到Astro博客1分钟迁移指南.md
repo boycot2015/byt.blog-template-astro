@@ -7,6 +7,7 @@ date: 2025-04-07 17:20:46
 cover: "https://i0.wp.com/uxiaohan.github.io/v2/2025/04/1744018738123.webp"
 recommend: true
 # top: true
+hide: true
 ---
 
 :::note{type="info"}

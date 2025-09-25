@@ -1,10 +1,10 @@
 export default {
   // 网站标题
-  Title: 'boycot博客',
+  Title: 'boycot',
   // 网站图标
   Favicon: '/favicon.svg',
   // 网站地址
-  Site: 'https://www.boycot.top',
+  Site: 'https://astro-blog.boycot.top',
   // 网站副标题
   Subtitle: '不曾与你分享的时间,我在进步.',
   // 网站描述
@@ -102,7 +102,7 @@ export default {
     },
     // Waline 评论
     Waline: {
-      enable: false,
+      enable: true,
       serverURL: 'https://ufdaemkl.lc-cn-n1-shared.com'
     }
   },
