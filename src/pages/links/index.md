@@ -15,6 +15,6 @@ type: "links"
 ```yaml
 name: boycot博客
 link: https://www.boycot.top/
-avatar: https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640
-desc: 运气是计划之外的东西.
+avatar: https://www.boycot.top/favicon.svg
+desc: 越努力越幸运.
 ```

@@ -6,10 +6,10 @@ import APlayer from 'aplayer';
 
 // 初始化音乐播放器
 export default async (MusicList: any[]) => {
-  const musicDOM: any = document.querySelectorAll(".vh-node.vh-vhMusic");
+  const musicDOM: any = document.querySelectorAll(".byt-node.byt-vhMusic");
   if (!musicDOM.length) return;
   musicDOM.forEach(async (container: any) => {
-    const { type = 'song', server = 'netease', id } = container.dataset;
+    const { type = 'song', server = 'netease', id } = container.dataet;
     const audio = await $GET(`${vhMusicApi}?server=${server}&type=${type}&id=${id}&r=${Math.random()}`);
     const ap = new APlayer({ container, audio, lrcType: 3 });
     MusicList.push(ap);

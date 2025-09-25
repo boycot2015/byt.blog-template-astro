@@ -82,7 +82,12 @@ html {
 		width: 100vw;
 		height: max-content;
 		color: var(--byt-font-color);
-		font-family: 'HarmonyOS Sans SC', serif;
+		font-family: 
+		Black,
+		OPPO,
+		Song,
+		KaiTi,
+		CangErYuYang, 'HarmonyOS Sans SC', serif;
 		font-weight: 400;
 		cursor: url('/assets/images/default.cur'), default;
 		overflow-x: hidden;
@@ -115,7 +120,7 @@ a {
 	color: var(--byt-font-color);
 }
 
-img[data-vh-lz-src] {
+img[data-byt-lz-src] {
 	transition: all 0.18s ease-in;
 
 	&:not(.loaded) {
@@ -126,7 +131,7 @@ img[data-vh-lz-src] {
 
 // ===================================================================== Other 
 // 悬浮背景 a 标签
-.vh-hover {
+.byt-hover {
 	position: relative;
 	transition: all 0.18s ease-in-out;
 
@@ -156,7 +161,7 @@ img[data-vh-lz-src] {
 }
 
 // 超出一行省略
-.vh-ellipsis {
+.byt-ellipsis {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -195,7 +200,7 @@ img[data-vh-lz-src] {
 // 设置图片懒加载样式
 .main-inner>.main-inner-content,
 .avatar {
-	img[data-vh-lz-src] {
+	img[data-byt-lz-src] {
 		transition: all 0.18s ease-in;
 
 		&:not(.loaded) {
@@ -205,9 +210,9 @@ img[data-vh-lz-src] {
 }
 
 // 首次加载效果
-.vh-animation.vh-animation-init {
+.byt-animation.byt-animation-init {
 	opacity: 0;
-	animation: 300ms vh-init-show;
+	animation: 300ms byt-init-show;
 	animation-fill-mode: forwards;
 	transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out;
 }
@@ -215,8 +220,8 @@ img[data-vh-lz-src] {
 // swup 动画效果
 html.swup-enabled,
 html.is-changing {
-	.vh-animation {
-		&.vh-animation-init {
+	.byt-animation {
+		&.byt-animation-init {
 			transform: translateY(0);
 			opacity: 1;
 			animation: none;
@@ -225,8 +230,8 @@ html.is-changing {
 }
 
 html.is-animating {
-	.vh-animation {
-		&.vh-animation-init {
+	.byt-animation {
+		&.byt-animation-init {
 			transform: translateY(0.88rem);
 			opacity: 0;
 		}
@@ -234,7 +239,7 @@ html.is-animating {
 }
 
 // 占位加载
-.vh-space-loading {
+.byt-space-loading {
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
@@ -254,24 +259,24 @@ html.is-animating {
 
 		&:nth-of-type(1) {
 			-webkit-animation: scale .8s ease infinite;
-			animation: vh-loading-animation .8s ease infinite
+			animation: byt-loading-animation .8s ease infinite
 		}
 
 		&:nth-of-type(2) {
 			-webkit-animation: scale .8s ease .2s infinite;
-			animation: vh-loading-animation .8s ease .2s infinite
+			animation: byt-loading-animation .8s ease .2s infinite
 		}
 
 		&:nth-of-type(3) {
 			-webkit-animation: scale .8s ease .4s infinite;
-			animation: vh-loading-animation .8s ease .4s infinite
+			animation: byt-loading-animation .8s ease .4s infinite
 		}
 
 	}
 }
 
 // 谷歌广告模块
-.vh-ad {
+.byt-ad {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -280,7 +285,7 @@ html.is-animating {
 	overflow: hidden !important;
 	z-index: 1;
 
-	&.vh-article-ad {
+	&.byt-article-ad {
 		margin-bottom: 1rem;
 		box-sizing: border-box;
 		padding: 0.75rem;
@@ -307,7 +312,7 @@ html.is-animating {
 
 
 
-@keyframes vh-init-show {
+@keyframes byt-init-show {
 	0% {
 		transform: translateY(2rem);
 		opacity: 0;
@@ -319,7 +324,7 @@ html.is-animating {
 	}
 }
 
-@keyframes vh-loading-animation {
+@keyframes byt-loading-animation {
 	50% {
 		height: 25px
 	}
@@ -329,7 +334,7 @@ html.is-animating {
 	}
 }
 
-@-webkit-keyframes vh-init-show {
+@-webkit-keyframes byt-init-show {
 	0% {
 		transform: translateY(2rem);
 		opacity: 0;
@@ -341,7 +346,7 @@ html.is-animating {
 	}
 }
 
-@-webkit-keyframes vh-loading-animation {
+@-webkit-keyframes byt-loading-animation {
 	50% {
 		height: 25px
 	}

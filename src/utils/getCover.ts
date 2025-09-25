@@ -61,6 +61,8 @@ const targetDir = path.resolve(__dirname, '../../public/assets/images/banner/');
 const fileIter = createImageIterator(targetDir);
 export default async (filename: string | null | undefined) => {
   if (filename) return filename;
+  const str = Math.random().toString(36).substring(2, 8);
   const { value } = await fileIter.next();
+  if (!filename) return `https://bing.img.run/rand.php?timestamp=${Date.now()+str}&type=2`
   return SITE_INFO.Site + `/assets/images/banner/${value}`
 }

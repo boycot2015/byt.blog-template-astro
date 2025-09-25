@@ -17,11 +17,11 @@ import swup from '@swup/astro';
 // https://astro.build/config
 export default defineConfig({
 	site: SITE_INFO.Site,
-	build: { assets: 'vh_static' },
+	build: { assets: 'static' },
 	integrations: [swup({
 		theme: false,
-		animationClass: "vh-animation-",
-		containers: [".main-inner>.main-inner-content",'.vh-header>.main'],
+		animationClass: "byt-animation-",
+		containers: [".main-inner>.main-inner-content",'.byt-header>.main'],
 		smoothScrolling: true,
 		progress: true,
 		cache: true,

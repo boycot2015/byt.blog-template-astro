@@ -2,7 +2,7 @@ import { $GET } from '@/utils/index'
 
 // 更新数据
 let searchJson: any[] = [];
-const getSearchJson = async () => (searchJson = await $GET('/vh-search.json'))
+const getSearchJson = async () => (searchJson = await $GET('/byt-search.json'))
 
 // 搜索
 const searchFn = async (value: string) => {
@@ -30,8 +30,8 @@ const findAndModifyElements = (arr: any[], keyword: string) => {
 // 渲染页面
 let searchHTML = '';
 const renderSearch = (arr: any[]) => {
-  searchHTML = !arr.length ? '<em></em>' : arr.map(i => `<a class="vh-search-item" href="${i.url}"><span class="vh-ellipsis">${i.title}</span><p class="vh-ellipsis line-3">${i.content}</p></a>`).join('');
-  document.querySelector('.vh-header>.main>.vh-search>main>.vh-search-list')!.innerHTML = searchHTML;
+  searchHTML = !arr.length ? '<em></em>' : arr.map(i => `<a class="byt-search-item" href="${i.url}"><span class="byt-ellipsis">${i.title}</span><p class="byt-ellipsis line-3">${i.content}</p></a>`).join('');
+  document.querySelector('.byt-header>.main>.byt-search>main>.byt-search-list')!.innerHTML = searchHTML;
 }
 
 // 截流
@@ -43,10 +43,10 @@ const searchInputChange = (v: any) => {
 }
 
 // 初始化搜索框
-const vhSearchInit = () => {
-  const searchDOM: any = document.querySelector(".vh-header>.main>nav>span.search-btn");
-  const searchMainDOM: any = document.querySelector(".vh-header>.main>.vh-search>main");
-  const searchListDOM: any = document.querySelector(".vh-header>.main>.vh-search");
+const SearchInit = () => {
+  const searchDOM: any = document.querySelector(".byt-header>.main>nav>span.search-btn");
+  const searchMainDOM: any = document.querySelector(".byt-header>.main>.byt-search>main");
+  const searchListDOM: any = document.querySelector(".byt-header>.main>.byt-search");
   const addActive = () => setTimeout(() => {
     searchListDOM.classList.add("active");
     searchListDOM.querySelector(".search-input>input").focus();
@@ -60,4 +60,4 @@ const vhSearchInit = () => {
   searchListDOM.querySelector(".search-input>input").addEventListener("input", searchInputChange);
 };
 
-export { searchFn, searchInputChange, vhSearchInit };
+export { searchFn, searchInputChange, SearchInit };

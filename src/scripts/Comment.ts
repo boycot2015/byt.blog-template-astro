@@ -12,9 +12,9 @@ declare const twikoo: any;
 
 // Twikoo 评论
 const TwikooFn = async (commentDOM: string) => {
-  document.querySelector(commentDOM)!.innerHTML = '<section class="vh-space-loading"><span></span><span></span><span></span></section>'
+  document.querySelector(commentDOM)!.innerHTML = '<section class="byt-space-loading"><span></span><span></span><span></span></section>'
   await LoadScript("https://registry.npmmirror.com/twikoo/1.6.41/files/dist/twikoo.all.min.js");
-  twikoo.init({ envId: SITE_INFO.Comment.Twikoo.envId, el: commentDOM, onCommentLoaded: () => setTimeout(() => document.querySelectorAll('.vh-comment a[href="#"]').forEach(link => link.removeAttribute('href'))) })
+  twikoo.init({ envId: SITE_INFO.Comment.Twikoo.envId, el: commentDOM, onCommentLoaded: () => setTimeout(() => document.querySelectorAll('.byt-comment a[href="#"]').forEach(link => link.removeAttribute('href'))) })
 }
 
 // Waline 评论
@@ -40,7 +40,8 @@ const WalineFn = async (commentDOM: string, walineInit: any) => {
       const res = await fetch("https://wp-cdn.4ce.cn/upload", { method: "POST", body });
       const resJson = await res.json();
       return resJson.data.link.replace('i.imgur.com', 'wp-cdn.4ce.cn/v2');
-    }
+    },
+    login: 'disable',
   });
 }
 
@@ -54,7 +55,7 @@ const checkComment = () => {
 // 初始化评论插件
 const commentInit = async (key: string, walineInit: any) => {
   // 评论 DOM 
-  const commentDOM = '.vh-comment>section'
+  const commentDOM = '.byt-comment>section'
   if (!document.querySelector(commentDOM)) return;
   // 评论列表
   const CommentList: any = { TwikooFn, WalineFn };

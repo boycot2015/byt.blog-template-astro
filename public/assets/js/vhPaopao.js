@@ -1,5 +1,5 @@
 export default (element, options) => {
-  document.querySelectorAll('.vh-paopao').forEach(item => setTimeout(() => item.remove()));
+  document.querySelectorAll('.byt-paopao').forEach(item => setTimeout(() => item.remove()));
   const config = Object.assign({ radius: 10, density: 0.3, clearOffset: 0.2 }, options);
   let width, height, ctx, active = true;
   const canvas = document.createElement('canvas');
@@ -13,7 +13,7 @@ export default (element, options) => {
     element.parentElement.style.overflow = 'hidden';
     canvas.width = width;
     canvas.height = height;
-    canvas.classList.add('vh-paopao');
+    canvas.classList.add('byt-paopao');
     ctx = canvas.getContext('2d');
   };
 

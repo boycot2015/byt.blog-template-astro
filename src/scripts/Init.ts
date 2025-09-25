@@ -14,9 +14,9 @@ import livePhotoInit from '@/scripts/LivePhoto'
 // 初始化BackTop组件
 import BackTopInitFn from "@/scripts/BackTop";
 // 搜索
-import { searchFn, vhSearchInit } from "@/scripts/Search";
+import { searchFn, SearchInit } from "@/scripts/Search";
 // 图片懒加载
-import vhLzImgInit from "@/scripts/vhLazyImg";
+import LzImgInit from "@/scripts/LazyImg";
 // 图片灯箱
 import ViewImage from "@/scripts/ViewImage";
 // 底部网站运行时间
@@ -34,7 +34,7 @@ import initMobileSidebar from "@/scripts/MobileSidebar";
 // Google 广告
 import GoogleAdInit from "@/scripts/GoogleAd";
 // Han Analytics 统计
-import HanAnalyticsInit from "@/scripts/HanAnalytics";
+import AnalyticsInit from "@/scripts/Analytics";
 //  谷歌 SEO 推送
 import SeoPushInit from "@/scripts/SeoPush";
 // SmoothScroll 滚动优化
@@ -58,7 +58,7 @@ const indexInit = async (only: boolean = true) => {
   // 初始化文章代码块
   codeInit();
   // 图片懒加载初始化
-  vhLzImgInit();
+  LzImgInit();
   // 初始化 LivePhoto
   livePhotoInit();
   // 文章视频播放器初始化
@@ -78,7 +78,7 @@ const indexInit = async (only: boolean = true) => {
   // 文章评论初始化
   checkComment() && commentInit(checkComment(), commentLIst)
   // Han Analytics 统计
-  HanAnalyticsInit();
+  AnalyticsInit();
   // 打字效果
   only && TypeWriteInit();
   // 泡泡🫧效果
@@ -86,7 +86,7 @@ const indexInit = async (only: boolean = true) => {
   // 预加载搜索数据
   only && searchFn("");
   // 初始化搜索功能
-  vhSearchInit();
+  SearchInit();
   // 移动端侧边栏初始化
   initMobileSidebar();
 };

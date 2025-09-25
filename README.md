@@ -103,7 +103,7 @@ pnpm newpost '文章标题'
 ### 友情链接
 
 ```js
-// 配置文件 src/page_data/Link.ts
+// 配置文件 src/data/Link.ts
 export default {
 	// API 接口请求优先，数据格式保持和 data 一致
 	api: "",
@@ -128,17 +128,17 @@ export default {
 ### 说说动态
 
 ```js
-// 配置文件 src/page_data/Talking.ts
+// 配置文件 src/data/Talking.ts
 export default {
 	// API 接口请求优先，数据格式保持和 data 一致
 	api: "",
 	// api 为空则使用 data 静态数据
-	// 注意：图片请用 vh-img-flex 类包裹
+	// 注意：图片请用 byt-img-flex 类包裹
 	data: [
 		{
 			date: "2025-02-12 19:36:16",
 			tags: ["树", "夕阳"],
-			content: '好美🌲<p class="vh-img-flex"><img src="https://i0.wp.com/shp.qpic.cn/collector/1655466387/937ec070-8448-4c7b-9c8b-abd41ce892cb/0"></p>'
+			content: '好美🌲<p class="byt-img-flex"><img src="https://i0.wp.com/shp.qpic.cn/collector/1655466387/937ec070-8448-4c7b-9c8b-abd41ce892cb/0"></p>'
 		},
 		{
 			date: "2024-10-05 16:16:06",
@@ -152,7 +152,7 @@ export default {
 ### 圈子（需部署 FreshRSS）
 
 ```js
-// 配置文件 src/page_data/Friends.ts
+// 配置文件 src/data/Friends.ts
 export default {
 	// API 接口请求优先，数据格式保持和 data 一致
 	api: "",
@@ -220,7 +220,7 @@ comment: false # 关闭页面评论（默认开启）
 │   ├── content
 │   │   └── blog        => 博客文章数据
 │   ├── layouts         => Layout 布局
-│   ├── page_data       => 页面数据
+│   ├── data       => 页面数据
 │   ├── pages
 │   │   ├── about                        => 关于页面
 │   │   ├── archives                     => 归档页面
@@ -306,7 +306,7 @@ export default {
     { text: 'boycotAPI', link: 'https://api.boycot.top', icon: 'WebSite_api' },
     { text: '每日热榜', link: 'https://hot.boycot.top', icon: 'WebSite_hot' },
     { text: '骤雨重山图床', link: 'https://wp-cdn.4ce.cn', icon: 'WebSite_img' },
-    { text: 'HanAnalytics', link: 'https://analytics.boycot.top', icon: 'WebSite_analytics' },
+    // { text: 'HanAnalytics', link: 'https://analytics.vvhan.com', icon: 'WebSite_analytics' },
   ],
   // 侧边栏展示
   AsideShow: {
@@ -322,7 +322,7 @@ export default {
   // DNS预解析地址
   DNSOptimization: [
     'https://i0.wp.com',
-    'https://analytics.boycot.top',
+    'https://analytics.vvhan.com',
     'https://vh-api.4ce.cn',
     'https://registry.npmmirror.com',
     'https://pagead2.googlesyndication.com'
@@ -343,7 +343,7 @@ export default {
     }
   },
   // Han Analytics 统计（https://github.com/uxiaohan/HanAnalytics）
-  HanAnalytics: { enable: true, server: 'https://analytics.boycot.top', siteId: 'Hello-HanHexoBlog' },
+  HanAnalytics: { enable: true, server: 'https://analytics.vvhan.com', siteId: 'Hello-HanHexoBlog' },
   // Google 广告
   GoogleAds: {
     ad_Client: 'ca-pub-xxxxxxxxxx',

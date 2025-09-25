@@ -60,8 +60,8 @@
     // p标签样式
     // ul标签样式
     p,
-    ul:not(.vh-vhMusic ul, .vh-comment ul),
-    ol:not(.vh-vhMusic ol, .vh-comment ol) {
+    ul:not(.byt-vhMusic ul, .byt-comment ul),
+    ol:not(.byt-vhMusic ol, .byt-comment ol) {
       padding: 0.618rem 0;
       font-size: 0.9375rem;
       line-height: 1.6;
@@ -91,8 +91,8 @@
       }
     }
 
-    ul:not(.vh-vhMusic ul, .vh-comment ul),
-    ol:not(.vh-vhMusic ol, .vh-comment ol) {
+    ul:not(.byt-vhMusic ul, .byt-comment ul),
+    ol:not(.byt-vhMusic ol, .byt-comment ol) {
       box-sizing: border-box;
       padding-left: 1.25rem;
       display: flex;
@@ -185,7 +185,7 @@
     }
 
     // 自定义组件样式
-    .vh-node {
+    .byt-node {
       margin: 0.618rem 0;
       box-sizing: border-box;
       width: 100%;
@@ -198,7 +198,7 @@
       }
 
       // :::note
-      &.vh-note {
+      &.byt-note {
         display: flex;
         flex-direction: column;
         gap: 0.688rem;
@@ -249,7 +249,7 @@
       }
 
       // ::btn 
-      &.vh-btn {
+      &.byt-btn {
         position: relative;
         box-sizing: border-box;
         display: flex;
@@ -391,13 +391,13 @@
       }
 
       // :::picture 
-      &.vh-picture {
+      &.byt-picture {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
         gap: .36rem;
 
         // 其下面的图片
-        &>img.vh-article-img {
+        &>img.byt-article-img {
           width: 100%;
           aspect-ratio: 3 / 2;
           border: solid 1px var(--byt-font-16);
@@ -408,7 +408,7 @@
       }
 
       // ::vhVideo
-      &.vh-vhVideo {
+      &.byt-vhVideo {
         margin: 1.188rem 0;
         box-sizing: border-box;
         display: flex;
@@ -421,7 +421,7 @@
       }
 
       // ::vhMusic
-      &.vh-vhMusic {
+      &.byt-vhMusic {
         margin: 1.188rem 0;
         width: 100%;
         height: max-content;
@@ -458,7 +458,7 @@
       }
 
       // ::vhLivePhoto
-      &.vh-vhLivePhoto {
+      &.byt-vhLivePhoto {
         box-sizing: border-box;
         display: flex;
         justify-content: center;
@@ -487,7 +487,7 @@
     }
 
     // 页面图片样式
-    img.vh-article-img {
+    img.byt-article-img {
       box-sizing: border-box;
       padding: .36rem;
       width: max-content;
@@ -505,11 +505,11 @@
     }
 
     // 文章内代码块
-    section.vh-code-box {
+    section.byt-code-box {
       margin: 1.188rem 0;
       position: relative;
 
-      &>span.vh-code-copy {
+      &>span.byt-code-copy {
         display: flex;
         align-items: center;
         justify-content: center;
